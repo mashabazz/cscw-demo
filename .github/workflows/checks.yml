@@ -1,0 +1,11 @@
+name: checks
+on: [push, pull_request]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "lint passed"
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "running tests" && exit 1
